@@ -6,29 +6,25 @@ To implement filters for smoothing and sharpening the images in the spatial doma
 Anaconda - Python 3.7
 
 ## Algorithm:
-### Step1
-</br>Import necessary libraries (cv2, NumPy, Matplotlib) for image loading, filtering, and visualization.
-</br> 
-### Step2
-</br>Load the image using cv2.imread() and convert it to RGB format using cv2.cvtColor() for proper display in Matplotlib.
-</br> 
+### Step1 
+Import necessary libraries (cv2, NumPy, Matplotlib) for image loading, filtering, and visualization.
 
-### Step3
-</br>Apply different filters:
+### Step2 
+Load the image using cv2.imread() and convert it to RGB format using cv2.cvtColor() for proper display in Matplotlib. 
+
+### Step3 
+Apply different filters:
 1. Averaging Filter: Define an averaging kernel using np.ones() and apply it to the image using cv2.filter2D().
 2. Weighted Averaging Filter: Define a weighted kernel (e.g., 3x3 Gaussian-like) and apply it with cv2.filter2D().
 3. Gaussian Filter: Use cv2.GaussianBlur() to apply Gaussian blur.
 4. Median Filter: Use cv2.medianBlur() to reduce noise.
 5. Laplacian Operator: Use cv2.Laplacian() to apply edge detection.
-</br> 
 
 ### Step4
-</br>Display each filtered image using plt.subplot() and plt.imshow() for side-by-side comparison of the original and processed images.
-</br> 
+Display each filtered image using plt.subplot() and plt.imshow() for side-by-side comparison of the original and processed images.
 
 ### Step5
-</br>Save or show the images using plt.show() after applying each filter to visualize the effects of smoothing and sharpening.
-</br> 
+Save or show the images using plt.show() after applying each filter to visualize the effects of smoothing and sharpening.
 
 ## Program:
 ### Developed By   : SRINITHI V
